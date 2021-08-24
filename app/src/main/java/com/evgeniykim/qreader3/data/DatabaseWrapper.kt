@@ -3,6 +3,7 @@ package com.evgeniykim.qreader3.data
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.evgeniykim.qreader3.data.orm.FavoriteORM
 import com.evgeniykim.qreader3.data.orm.HistoryORM
 import com.evgeniykim.qreader3.domain.History
 
@@ -14,9 +15,14 @@ class DatabaseWrapper(context: Context): SQLiteOpenHelper(context, "qr-code.db",
 
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(HistoryORM().SQL_CREATE_TABLE)
+//        db?.execSQL(FavoriteORM().SQL_CREATE_TABLE)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL(HistoryORM().SQL_DROP_TABLE)
+//        db?.execSQL(FavoriteORM().SQL_DROP_TABLE)
     }
+
+
+
 }

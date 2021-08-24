@@ -1,19 +1,16 @@
-package com.evgeniykim.qreader3.presentation.activities.history
+package com.evgeniykim.qreader3.presentation.activities.Favorite
 
 import android.content.Context
-import com.evgeniykim.qreader3.domain.History
+import com.evgeniykim.qreader3.domain.Favorite
 import com.evgeniykim.qreader3.presentation.mvp.BaseMvpPresenter
 import com.evgeniykim.qreader3.presentation.mvp.BaseMvpView
 
-object HistoryActivityContract {
-
+object FavoriteContract {
     interface View: BaseMvpView {
-        fun showHistory(histories: MutableList<History>)
+        fun showFavorite(favorites: MutableList<Favorite>)
     }
 
     interface Presenter: BaseMvpPresenter<View> {
-        fun loadHistory(context: Context)
+        fun loadFavorites(context: Context)
     }
-
-
 }

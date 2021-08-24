@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".presentation.activities.history.HistoryActivity">
+    tools:context=".presentation.activities.Favorite.FavoriteActivity"
+    >
 
     <include
         layout="@layout/toolbar"/>
@@ -17,7 +18,7 @@
 <!--        android:layout_height="?attr/actionBarSize">-->
 
 <!--        <ImageView-->
-<!--            android:id="@+id/btnBack"-->
+<!--            android:id="@+id/btnBackFav"-->
 <!--            android:clickable="true"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
@@ -29,18 +30,18 @@
 <!--            android:scaleType="centerCrop" />-->
 
 <!--        <com.devspark.robototextview.widget.RobotoTextView-->
-<!--            android:text="@string/history"-->
+<!--            android:text="@string/favorite"-->
 <!--            android:textColor="@android:color/black"-->
 <!--            android:textSize="@dimen/sp_22"-->
 <!--            android:textStyle="bold"-->
 <!--            android:layout_toEndOf="@+id/btnBack"-->
-<!--            android:layout_toStartOf="@+id/btnClear"-->
+<!--            android:layout_toStartOf="@+id/btnClearFav"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="match_parent"-->
 <!--            android:gravity="center" />-->
 
 <!--        <ImageView-->
-<!--            android:id="@+id/btnClear"-->
+<!--            android:id="@+id/btnClearFav"-->
 <!--            android:clickable="true"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
@@ -59,7 +60,7 @@
 <!--        android:layout_height="@dimen/dp_1"/>-->
 
 <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
-<!--        android:id="@+id/srlHistory"-->
+<!--        android:id="@+id/srlFavorite"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent">-->
 
@@ -68,7 +69,7 @@
 <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvHistory"
+        android:id="@+id/rvFavorite"
         android:background="@android:color/transparent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

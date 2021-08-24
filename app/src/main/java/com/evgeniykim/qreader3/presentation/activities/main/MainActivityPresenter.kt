@@ -2,6 +2,7 @@ package com.evgeniykim.qreader3.presentation.activities.main
 
 import android.util.Patterns
 import com.evgeniykim.qreader3.R
+import com.evgeniykim.qreader3.domain.Favorite
 import com.evgeniykim.qreader3.domain.History
 import com.evgeniykim.qreader3.presentation.mvp.BaseMvpPresenterImpl
 
@@ -33,4 +34,6 @@ MainActivityContract.Presenter {
         mView?.continueScanning()
         mView?.shareResultViewSharingIntent(result)
     }
+
+
 }

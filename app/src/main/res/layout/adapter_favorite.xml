@@ -10,14 +10,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@color/colorPrimaryDark"
-    android:id="@+id/cardHis">
+    android:id="@+id/cardFav">
 
     <LinearLayout
         android:layout_margin="@dimen/dp_15"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/urlIcon"
@@ -30,15 +29,6 @@
             android:layout_gravity="center"
             app:tint="@color/blueLight"/>
 
-<!--        <com.devspark.robototextview.widget.RobotoTextView-->
-<!--            android:id="@+id/tvContext"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textSize="@dimen/sp_17"-->
-<!--            android:textColor="@color/colorPrimary"-->
-<!--            android:text="1. 72623499240"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +37,7 @@
 
 
             <TextView
-                android:id="@+id/tvContext"
+                android:id="@+id/tvContextFav"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
@@ -55,7 +45,7 @@
                 android:text="here is url"/>
 
             <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/tvDate"
+                android:id="@+id/tvDateFav"
                 android:layout_centerVertical="true"
                 android:textStyle="normal"
                 android:textSize="@dimen/sp_15"
@@ -71,7 +61,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/arrowRight"
+                android:id="@+id/arrowRightFav"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
@@ -79,36 +69,18 @@
                 app:tint="@color/lightgrey"
                 android:layout_alignParentEnd="true"
                 android:clickable="true"
-                android:focusable="true"
-                android:background="?actionBarItemBackground"/>
+                android:focusable="true"/>
         </RelativeLayout>
 
 
-
-        <!--        <RelativeLayout-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_marginLeft="@dimen/dp_16"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/ivDate"-->
-<!--                android:src="@drawable/ic_baseline_date_range_24"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content" />-->
-
-
-
-<!--        </RelativeLayout>-->
-
-<!--        <LinearLayout-->
+        <!--        <LinearLayout-->
 <!--            android:layout_marginTop="@dimen/dp_10"-->
 <!--            android:orientation="horizontal"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content">-->
 
 <!--            <ImageView-->
-<!--                android:id="@+id/ivSeacrh"-->
+<!--                android:id="@+id/ivSeacrhFav"-->
 <!--                android:clickable="true"-->
 <!--                android:src="@drawable/ic_search_24"-->
 <!--                android:layout_weight="1"-->
@@ -116,7 +88,7 @@
 <!--                android:layout_height="wrap_content" />-->
 
 <!--            <ImageView-->
-<!--                android:id="@+id/ivCopy"-->
+<!--                android:id="@+id/ivCopyFav"-->
 <!--                android:clickable="true"-->
 <!--                android:src="@drawable/ic_baseline_content_copy_24"-->
 <!--                android:layout_weight="1"-->
@@ -124,7 +96,7 @@
 <!--                android:layout_height="wrap_content" />-->
 
 <!--            <ImageView-->
-<!--                android:id="@+id/ivShare"-->
+<!--                android:id="@+id/ivShareFav"-->
 <!--                android:clickable="true"-->
 <!--                android:src="@drawable/ic_baseline_share_24"-->
 <!--                android:layout_weight="1"-->
@@ -132,10 +104,6 @@
 <!--                android:layout_height="wrap_content" />-->
 
 <!--        </LinearLayout>-->
-
-
-
-
 
     </LinearLayout>
 
